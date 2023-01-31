@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<a class="yang" href=""></a><a href="" class='yin'></a>
+
+<style>
+    a {
+        pointer-events: none;
+        color: #e5e5e5;
+        text-decoration: none;
+        text-align: center;
+        font-family: "Fira Code Light";
+    }
+    .yin {
+        display: flex;
+        align-items: center;
+        width: 80vmin;
+        height: 80vmin;
+        border-radius: 50%;
+        background: linear-gradient(black 50%, white 0);
+        border: 2px solid black;
+        transform: rotate(45deg);
+        pointer-events: none;
+    }
+    .yin:before, .yin:after {
+        flex: 1;
+        border: solid 13.3333333333vmin white;  /* width / 6 */
+        height: 13.3333333333vmin;  /* height / 6 */
+        border-radius: 50%;
+        background: black;
+        white-space: pre-wrap;
+        content: "\A\A Click To \A Like";
+        transform: rotate(-45deg);
+    }
+    .yin:after {
+        border-color: black;
+        background: white;
+        pointer-events: all;
+        white-space: pre-wrap;
+        content: "\A\A Click To \A Dislike";
+        color: #403f3f;
+    }
+    .yang {
+        position: absolute;
+        width: 40vmin;
+        height: 40vmin;
+        pointer-events: all;
+    }
+</style>
+</html>
